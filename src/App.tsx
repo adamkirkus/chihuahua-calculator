@@ -13,9 +13,17 @@ function App() {
         <h1>Chihuahua Calculator</h1>
 
         <p>Target level:</p>
-        <input id="target-level" type="number" min="0" value="10" />
-        <button className="btn btn-primary">Update</button>
-        <table className="table">
+        <input
+          type="number"
+          min="0"
+          max="99"
+          defaultValue={count}
+          onChange={(evt) => setCount(evt.target.valueAsNumber)}
+        />
+        <button className="btn btn-primary" onClick={UpdateRows}>
+          Update
+        </button>
+        <table className="table" onLoad={UpdateRows}>
           <caption className="caption-top">
             You got chihuahuas on yo phone?
           </caption>
@@ -37,8 +45,9 @@ function App() {
 }
 
 function UpdateRows() {
-  let level = document.getElementById("target-level").?valueAsNumber;
-  for (let i = 0; i < level; i++) {}
+  for (let i = 0; i < count; i++) {
+    console.log(i);
+  }
 }
 
 export default App;
