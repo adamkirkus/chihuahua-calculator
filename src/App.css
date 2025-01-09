@@ -1,0 +1,14 @@
+#target-level {
+  width: 3em;
+  margin: 1em;
+}
+
+#top-spacer {
+  height: 50px;
+}
+
+.table td.fit,
+.table th.fit {
+  white-space: nowrap;
+  width: 1%;
+}
