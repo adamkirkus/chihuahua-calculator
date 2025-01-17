@@ -1,9 +1,20 @@
-#top-spacer {
-  height: 50px;
+#app-title {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#input-level {
+  max-width: 5em;
+  text-align: center;
 }
 
 .table td.fit,
 .table th.fit {
   white-space: nowrap;
   width: 1%;
+}
+
+input.no-caret {
+  caret-color: transparent;
 }

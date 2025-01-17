@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import simpleReducer from '../features/simpleSlice';
 
 export const store = configureStore({
     reducer: {
+        simple: simpleReducer,
     }
 });
 
