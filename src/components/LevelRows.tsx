@@ -1,13 +1,9 @@
 import { useAppSelector } from "../app/hooks";
 
-// interface Props {
-//    level: number;
-// }
-
-// function LevelRows({ level }: Props) {
 function LevelRows() {
    const elements = [];
    const level = useAppSelector((state) => state.simple.level);
+
    for (let i = 1; i <= level; i++) {
       elements.push(LevelRow(i));
    }
@@ -20,7 +16,9 @@ function LevelRows() {
             <thead>
                <tr>
                   <th scope="col" className="fit">
-                     <input type="checkbox" />
+                     <div className="form-check">
+                        <input className="form-check-input lg" type="checkbox" />
+                     </div>
                   </th>
                   <th scope="col">Level</th>
                </tr>
@@ -37,7 +35,9 @@ function LevelRow(level: number) {
       <>
          <tr key={"levelRow" + level}>
             <td>
-               <input type="checkbox" id={"chkLevel" + level} />
+               <div className="form-check">
+                  <input className="form-check-input lg" type="checkbox" id={"chkLevel" + level} />
+               </div>
             </td>
             <td>{level}</td>
          </tr>

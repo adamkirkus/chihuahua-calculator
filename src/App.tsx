@@ -1,11 +1,8 @@
-// import { useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
 import LevelRows from "./components/LevelRows";
 
 function App() {
-   // const [rows, setRows] = useState(<LevelRows level={level}></LevelRows>);
-
    return (
       <>
          <div className="container">
