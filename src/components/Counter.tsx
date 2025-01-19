@@ -6,26 +6,24 @@ function Counter() {
    const dispatch = useAppDispatch();
    return (
       <>
-         <div className="counter">
-            <h4>Target Level</h4>
+         <h4>Target Level</h4>
 
-            <div className="input-group input-group-lg mb-3 counter-input-group">
-               <button className="btn btn-outline-primary" onClick={btnMinus_OnClick}>
-                  -
-               </button>
+         <div className="input-group input-group-lg mb-3 counter-input-group">
+            <button className="btn btn-outline-primary" onClick={btnMinus_OnClick}>
+               -
+            </button>
 
-               <input
-                  className="form-control no-caret"
-                  id="input-level"
-                  type="text"
-                  readOnly
-                  value={level}
-               />
+            <input
+               className="form-control no-caret"
+               id="input-level"
+               type="text"
+               readOnly
+               value={level}
+            />
 
-               <button className="btn btn-outline-primary" onClick={btnPlus_OnClick}>
-                  +
-               </button>
-            </div>
+            <button className="btn btn-outline-primary" onClick={btnPlus_OnClick}>
+               +
+            </button>
          </div>
       </>
    );
