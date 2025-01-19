@@ -34,7 +34,7 @@ function LevelRow(level: number) {
    return (
       <>
          <tr key={"levelRow" + level}>
-            <td>
+            <td className="fit">
                <div className="form-check">
                   <input className="form-check-input lg" type="checkbox" id={"chkLevel" + level} />
                </div>

@@ -2,9 +2,11 @@
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  font-family: 'Cochin';
 }
 
 #input-level {
+  min-width: 3em;
   max-width: 5em;
   text-align: center;
 }
@@ -21,4 +23,13 @@ table td.fit,
 table th.fit {
   white-space: nowrap;
   width: 1%;
+  padding-left: 20px;
+}
+
+.counter {
+  background-color: red;
+}
+
+.counter-input-group {
+  background-color: blue;
 }
