@@ -6,7 +6,6 @@ import Result from "./components/Result";
 function App() {
    return (
       <>
-         {/* <div className="container text-center"> */}
          <div className="container">
             <h1 className="display-2" id="app-title">
                Chihuahua Calculator
@@ -24,6 +23,8 @@ function App() {
             <p className="text-body-secondary">You got chihuahuas on yo phone?</p>
 
             <LevelRows />
+
+            {/* TODO: spacing below bottom row */}
          </div>
       </>
    );

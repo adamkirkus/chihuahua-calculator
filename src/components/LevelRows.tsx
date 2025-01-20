@@ -18,6 +18,8 @@ function LevelRows() {
    );
 
    function LevelRow(level: number) {
+      // TODO: make another column for the list group to use some of the dead space and reduce scrolling
+
       return (
          <>
             <li className="list-group-item tall" key={"level" + level}>
