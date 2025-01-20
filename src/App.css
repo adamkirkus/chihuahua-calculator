@@ -2,10 +2,10 @@
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
-  font-family: 'Cochin';
 }
 
-.counter-input-group {
+.center-content-xy {
+  align-content: center;
   justify-content: center;
 }
 
@@ -33,4 +33,9 @@ table th.fit {
 .tall {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+.wide {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }

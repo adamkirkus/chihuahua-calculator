@@ -5,6 +5,8 @@ import App from "./App.tsx";
 import { Provider } from "react-redux";
 import { store } from "./app/store.ts";
 
+// figure out how to specify initial level (cookies? URL params?)
+
 createRoot(document.getElementById("root")!).render(
    <StrictMode>
       <Provider store={store}>

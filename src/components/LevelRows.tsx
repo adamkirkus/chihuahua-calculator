@@ -12,25 +12,6 @@ function LevelRows() {
    }
 
    return (
-      // <>
-      //    <table className="table">
-      //       <caption className="caption-top">You got chihuahuas on yo phone?</caption>
-
-      //       <thead>
-      //          <tr>
-      //             <th scope="col" className="fit">
-      //                <div className="form-check">
-      //                   <input className="form-check-input lg" type="checkbox" />
-      //                </div>
-      //             </th>
-      //             <th scope="col">Level</th>
-      //          </tr>
-      //       </thead>
-
-      //       <tbody id="level-rows">{elements}</tbody>
-      //    </table>
-      // </>
-
       <>
          <ul className="list-group">{elements}</ul>
       </>
@@ -38,29 +19,20 @@ function LevelRows() {
 
    function LevelRow(level: number) {
       return (
-         // <>
-         //    <tr key={"levelRow" + level}>
-         //       <td className="fit">
-         //          <div className="form-check">
-         //             <input className="form-check-input lg" type="checkbox" id={"chkLevel" + level} />
-         //          </div>
-         //       </td>
-         //       <td>{level}</td>
-         //    </tr>
-         // </>
-
          <>
             <li className="list-group-item tall" key={"level" + level}>
-               <input
-                  className="form-check-input me-2"
-                  type="checkbox"
-                  id={"chkLevel" + level}
-                  value={2 ** (level - 1)}
-                  onChange={chkLevel_OnChange}
-               />
-               <label className="form-check-label stretched-link" htmlFor={"chkLevel" + level}>
-                  {"Level " + level}
-               </label>
+               <div className="form-check fs-4">
+                  <input
+                     className="form-check-input me-2"
+                     type="checkbox"
+                     id={"chkLevel" + level}
+                     value={2 ** (level - 1)}
+                     onChange={chkLevel_OnChange}
+                  />
+                  <label className="form-check-label stretched-link" htmlFor={"chkLevel" + level}>
+                     {"Level " + level}
+                  </label>
+               </div>
             </li>
          </>
       );

@@ -6,8 +6,11 @@ import Result from "./components/Result";
 function App() {
    return (
       <>
+         {/* <div className="container text-center"> */}
          <div className="container">
-            <h1 id="app-title">Chihuahua Calculator</h1>
+            <h1 className="display-2" id="app-title">
+               Chihuahua Calculator
+            </h1>
 
             <div className="row justify-content-evenly text-center">
                <div className="col-5">
